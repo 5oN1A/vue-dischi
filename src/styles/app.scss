@@ -1,0 +1,7 @@
+@import "variables.scss";
+@import "navbar.scss";
+@import "~bootstrap/scss/bootstrap";
+
+.background {
+    background-color: $darker_bg;
+}
