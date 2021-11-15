@@ -9,10 +9,7 @@
 <script>
 
 export default {
-    name: "Navbar",
-    data() {
-        
-    }
-
-}
+    name: "Navbar"
+   }
+   
 </script>

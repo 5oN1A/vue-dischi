@@ -1,8 +1,36 @@
 @import "variables.scss";
-@import "navbar.scss";
-@import "disc-container.scss";
 @import "~bootstrap/scss/bootstrap";
 
-.background {
+nav {
+    background-color: $lighter_bg;
+    height: 100px;
+}
+
+main {
     background-color: $darker_bg;
+    color: white;
+    font-size: 50px;
+
+    .card {
+        background-color: $lighter_bg;
+        padding: 25px;
+        border-radius: 0;
+
+        img {
+            border-radius: 0;
+        }
+    }
+    
+    .card-body {
+        
+        .card-title {
+            color: $light_txt;
+        }
+
+            .card-text {
+                color: $dark_txt;
+                
+            }
+       
+    }
 }
