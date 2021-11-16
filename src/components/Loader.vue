@@ -28,19 +28,12 @@ export default {
 <style scoped lang="scss">
 
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  background: #c5cae9;
-}
+
 
 .my-box {
   width: 100%;
   height: 100vh;
-  background: #1a237e;
+  background: #182D3B;
   display: flex;
   justify-content: center;
   align-items: center;
