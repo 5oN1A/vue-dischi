@@ -11,9 +11,13 @@ main {
     color: white;
     font-size: 50px;
 
-    .select-section{
+    .select-section {
         width: 400px;
-        margin:auto;
+        margin: auto;
+        
+        label {
+            font-size: 16px;
+        }
     }
 
     .card {
@@ -22,25 +26,19 @@ main {
         border-radius: 0;
         height: 430px;
 
-
         img {
             border-radius: 0;
         }
     }
-    
+
     .card-body {
-
-
-        
         .card-title {
             color: $light_txt;
             text-transform: uppercase;
         }
 
-            .card-text {
-                color: $dark_txt;
-                
-            }
-       
+        .card-text {
+            color: $dark_txt;
+        }
     }
 }

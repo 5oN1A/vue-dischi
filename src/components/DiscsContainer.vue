@@ -4,7 +4,7 @@
       <Select @filter="filterByCategory"></Select>
       <Loader :label="loading" v-if="loading === true"></Loader>
       <div class="row row-cols-5 g-4 py-5" v-else>
-        <div class="col" v-for="(disc, index) in discsList" :key="index">
+        <div class="col" v-for="(disc, index) in printDiscs" :key="index">
           <DiscCard
             :img="disc.poster"
             :title="disc.title"
@@ -38,12 +38,26 @@ export default {
     return {
       discsList: [],
       loading: true,
+      filteredData: "",
     };
   },
-  methods:{
-    filterByCategory(option) {
-      console.log(option);
+  computed:{
+    printDiscs() {
+      if(!this.filteredData){
+        return this.discsList;
+      }
+
+      
+      return this.discsList.filter(disc =>{
+        return this.filteredData === disc.genre;
+      })
     }
+  },
+  methods: {
+    filterByCategory(option) {
+      this.filteredData = option;
+      console.log(option);
+    },
   },
   mounted() {
     axios
