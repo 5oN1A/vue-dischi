@@ -11,6 +11,11 @@ main {
     color: white;
     font-size: 50px;
 
+    .select-section{
+        width: 400px;
+        margin:auto;
+    }
+
     .card {
         background-color: $lighter_bg;
         padding: 25px;
